@@ -1,0 +1,22 @@
+ariston:
+  username: !secret ariston_user
+  password: !secret ariston_password
+  switches:
+    - internet_time
+    - internet_weather
+  sensors:
+    - ch_detected_temperature
+    - ch_mode
+    - ch_comfort_temperature
+    - ch_economy_temperature
+    - ch_set_temperature
+    - dhw_set_temperature
+    - errors_count
+    - mode
+    - outside_temperature
+  binary_sensors:
+    - changing_data
+    - online
+  selector:
+    - mode
+    - ch_mode
